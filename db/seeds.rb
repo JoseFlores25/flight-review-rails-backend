@@ -1,5 +1,5 @@
 
-airlines = Airline.create([
+Airline.create([
   {
     name: "United Airlines",
     image_url: "https://open-flights.s3.amazonaws.com/United-Airlines.png"
@@ -26,17 +26,17 @@ airlines = Airline.create([
   }
 ])
 
-reviews = Review.create ([
+Reviews.create ([
 {
   title: 'Great airline',
   description: 'I had a lovely time',
   score: 5,
-  airline: airlines.first
+  airline: airline.first
 },
 {
 title: 'Bad airline',
   description: 'I had a bad time',
   score: 1,
-  airline: airlines.first
-}
+  airline: airline.first
+
 ])
